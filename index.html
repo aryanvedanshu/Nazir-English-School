@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Website - Home</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <embed
+            xlink:href="Images\nazir-english-school.svg"
+            class="d-block w-100"
+            alt="Extra Curricular"
+          />
+        </div>
+        <div class="carousel-item">
+          <embed
+            xlink:href="Images\nazir-english-school.svg"
+            class="d-block w-100"
+            alt="Students Placed in Colleges"
+          />
+        </div>
+        <div class="carousel-item">
+          <embed
+            xlink:href="Images\nazir-english-school.svg"
+            class="d-block w-100"
+            alt="Festival"
+          />
+        </div>
+        <div class="carousel-item">
+          <embed
+            xlink:href="Images\nazir-english-school.svg"
+            class="d-block w-100"
+            alt="Sports Event"
+          />
+        </div>
+        <div class="carousel-item">
+          <embed
+            xlink:href="Images\nazir-english-school.svg"
+            class="d-block w-100"
+            alt="Sport Winner Appreciation"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Button to trigger the modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#noticeModal"
+    >
+      View Notices
+    </button>
+
+    <!-- Modal Structure -->
+    <div
+      class="modal fade"
+      id="noticeModal"
+      tabindex="-1"
+      aria-labelledby="noticeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="noticeModalLabel">School Notices</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Add your notices here -->
+            <ul>
+              <li>Sports event on 25th August</li>
+              <li>Annual festival on 10th September</li>
+              <li>New e-learning module starting in October</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recognition and History Section -->
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h2>Recognition</h2>
+        <ul class="list-unstyled">
+          <li>Recognized by National Education Board</li>
+          <li>ISO Certified School</li>
+          <li>Awarded Best School in Region - 2023</li>
+        </ul>
+
+        <h2 class="mt-5">Our History</h2>
+        <p>
+          The school was established in 1985, and over the past 39 years, we
+          have proudly graduated over 10,000 students who have gone on to
+          successful careers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Nazir Section -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h2>Why Nazir?</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-sm rounded">
+              <img
+                src="learning.jpg"
+                class="card-img-top rounded-top"
+                alt="Learning"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Learning</h5>
+                <p class="card-text">
+                  Dedicated to fostering a love for learning in every student.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-sm rounded">
+              <img
+                src="elearning.jpg"
+                class="card-img-top rounded-top"
+                alt="e-learning"
+              />
+              <div class="card-body">
+                <h5 class="card-title">E-Learning</h5>
+                <p class="card-text">
+                  Modern e-learning resources for enhanced education.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-sm rounded">
+              <img
+                src="sports.jpg"
+                class="card-img-top rounded-top"
+                alt="Sports"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sports</h5>
+                <p class="card-text">
+                  Comprehensive sports programs for all students.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card shadow-sm rounded">
+              <img
+                src="extra.jpg"
+                class="card-img-top rounded-top"
+                alt="Extra Activities"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Extra Activities</h5>
+                <p class="card-text">
+                  A variety of activities to support holistic growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Happening Life and Events Section -->
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h2>Happening Life</h2>
+        <p>Recent events and accomplishments.</p>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h4>Recent Events</h4>
+            <p>Our students excelled in the inter-school sports event!</p>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4">
+            <h4>Upcoming Activities/Events</h4>
+            <p>The annual cultural festival is coming up in September.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Leaders Section -->
+    <section class="py-5 text-center">
+      <div class="container">
+        <h2>Our Leaders</h2>
+        <div id="leaderCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="leader1.jpg"
+                      class="card-img-top"
+                      alt="Leader 1"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">John Doe</h5>
+                      <p class="card-text">Principal</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="leader2.jpg"
+                      class="card-img-top"
+                      alt="Leader 2"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jane Smith</h5>
+                      <p class="card-text">Vice Principal</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-sm">
+                    <img
+                      src="leader3.jpg"
+                      class="card-img-top"
+                      alt="Leader 3"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mark Johnson</h5>
+                      <p class="card-text">Head of Sports</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add more carousel-items if necessary -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#leaderCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#leaderCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      // Load header and footer
+      $(function () {
+        $("#header-placeholder").load("Include\Header.html");
+        $("#footer-placeholder").load("Include\footer.html");
+      });
+    </script>
+  </body>
+</html>
