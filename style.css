@@ -1,0 +1,57 @@
+/* custom-styles.css */
+
+body {
+    background-color: #7a9e08;
+    color: #0b3335;
+}
+
+.btn-primary {
+    background-color: #fcad2c;
+    border-color: #fcad2c;
+}
+
+.btn-primary:hover {
+    background-color: #e59b1f;
+    border-color: #e59b1f;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+.modal-content {
+    background-color: #ffffff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fcad2c;
+}
+
+/* You may need to adjust these styles for better contrast */
+.carousel-control-prev,
+.carousel-control-next {
+    color: #0b3335;
+}
+
+/* Additional styles to ensure text readability */
+.text-dark {
+    color: #0b3335 !important;
+}
+
+.text-light {
+    color: #ffffff !important;
+}
+
+/* Ensure links are visible */
+a {
+    color: #fcad2c;
+}
+
+a:hover {
+    color: #e59b1f;
+}

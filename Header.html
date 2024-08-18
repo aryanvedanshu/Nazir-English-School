@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive School Website</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom dropdown hover */
+      .navbar-nav .nav-item .dropdown-menu {
+        display: none;
+      }
+
+      .navbar-nav .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+
+      /* Ensure even spacing of navbar items */
+      .navbar-nav {
+        flex: 1;
+        justify-content: space-evenly;
+      }
+
+      /* Center logo in mobile view */
+      .navbar-brand {
+        margin: auto;
+      }
+
+      /* Color scheme based on provided guidelines */
+      body {
+        background-color: #ffffff;
+      }
+
+      .navbar {
+        background-color: #7a9e08; /* Olive Green */
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff; /* White for the text */
+      }
+
+      .nav-link:hover {
+        color: #fcad2c; /* Orange for hover effect */
+      }
+
+      .dropdown-menu {
+        background-color: #ffffff; /* White dropdown background */
+      }
+
+      .dropdown-item {
+        color: #0b3335; /* Dark Teal for dropdown text */
+      }
+
+      .dropdown-item:hover {
+        background-color: #fcad2c; /* Orange hover for dropdown items */
+        color: #ffffff; /* White text on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section with Bootstrap -->
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container-fluid md-2">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="#" alt="Nazir English School" srcset="" /><br />
+          nazir English School</a
+        >
+
+        <!-- Toggle button for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">School Information</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Vision, Mission and Quality</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Principal's Message</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Managing Committee</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Admission Procedure Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="admissionDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admission Procedure
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                <li><a class="dropdown-item" href="#">Apply Now</a></li>
+                <li><a class="dropdown-item" href="#">Admission Process</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Eligibility Criteria</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Hostel Facilities</a></li>
+              </ul>
+            </li>
+
+            <!-- Academics Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="academicsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Academics
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                <li><a class="dropdown-item" href="#">Academic Calendar</a></li>
+                <li><a class="dropdown-item" href="#">Annual Report</a></li>
+                <li><a class="dropdown-item" href="#">Our Faculties</a></li>
+                <li><a class="dropdown-item" href="#">Student Corner</a></li>
+              </ul>
+            </li>
+
+            <!-- Exams Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="examsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Exams
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="examsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Examination Online Form</a>
+                </li>
+                <li><a class="dropdown-item" href="#">NES Exam Schedule</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Examination Rules and Regulations</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Results</a></li>
+              </ul>
+            </li>
+
+            <!-- Extra Curricular Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="extracurricularDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Extra Curricular
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="extracurricularDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Sports Events</a></li>
+                <li><a class="dropdown-item" href="#">Annual Feast</a></li>
+                <li><a class="dropdown-item" href="#">School Events</a></li>
+              </ul>
+            </li>
+
+            <!-- Contact Us Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="contactDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Contact Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="contactDropdown">
+                <li><a class="dropdown-item" href="#">Address</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Outreach (Phone Number)</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Email</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
